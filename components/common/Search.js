@@ -5,7 +5,6 @@ export default function Search() {
   const router = useRouter()
   const queryParam = router.query.q ? router.query.q : ""
   const [query, setQuery] = useState(queryParam)
-  console.log({ queryParam, query })
   const submitSearch = (e) => {
     e.preventDefault()
     router.push(`/search?q=${query}`)

@@ -28,7 +28,11 @@ export default function Header() {
         </div>
         <div className="flex w-1/3">
           {router.pathname !== "/search" && <Search />}
-          <Button btnType="default" customClass="inline-flex">
+          <Button
+            btnType="default"
+            customClass="inline-flex"
+            onClick={() => router.push("/categories")}
+          >
             Categories
             <svg
               fill="none"
