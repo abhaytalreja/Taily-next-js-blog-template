@@ -2,36 +2,32 @@ import React from "react"
 import Link from "next/link"
 import siteConfig from "@/config/siteConfig"
 import Logo from "@/components/common/Logo"
-import Button from "./Button"
+import Button from "@/components/common/Button"
+import { useRouter } from "next/router"
+
+import Search from "@/components/common/Search"
 
 export default function Header() {
+  const router = useRouter()
   return (
-    <header className="text-gray-600 body-font m-4">
+    <header className="text-gray-600 body-font p-4 border-b-4 border-theme">
       <div className="md:px-24 px-4 m-auto flex justify-between">
-        <Link href="/">
-          <a className="flex order-first lg:order-none title-font font-medium items-center text-gray-900">
-            <span className="text-xl border-b-2 border-theme">
-              {siteConfig.title}
-            </span>
-          </a>
-        </Link>
-        <div className="invisible md:visible">
-          <a href="/">
-            <Logo />
-          </a>
-          {/* <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path> */}
-          {/* <Link href="/">
-            <a className="absolute z-10 top-2 -ml-24">
-              <img
-                src="/"
-                alt="Logo"
-                className=""
-              />
+        <div className="flex">
+          <Link href="/">
+            <a className="mx-2">
+              <Logo />
             </a>
-          </Link> */}
+          </Link>
+          <Link href="/">
+            <a className="flex order-first lg:order-none title-font font-medium items-center text-gray-900">
+              <span className="text-3xl border-b-2 border-theme">
+                {siteConfig.title}
+              </span>
+            </a>
+          </Link>
         </div>
-
-        <div className="">
+        <div className="flex w-1/3">
+          {router.pathname !== "/search" && <Search />}
           <Button btnType="default" customClass="inline-flex">
             Categories
             <svg

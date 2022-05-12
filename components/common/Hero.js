@@ -10,7 +10,7 @@ url(${bgImage})`,
   }
   return (
     <section
-      className="text-white body-font bg-cover bg-center relative overflow-hidden py-12 sm:py-24 border-t-4 border-theme"
+      className="text-white body-font bg-cover bg-center relative overflow-hidden py-12 sm:py-24"
       style={backgroundStyle}
     >
       <div className="container mx-auto flex px-5 py-4 sm:py-8 md:flex-row flex-col items-center">

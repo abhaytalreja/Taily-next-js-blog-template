@@ -15,7 +15,7 @@ export default function PostPreview({ post, id, isReadMore = false }) {
         <div className="p-6">
           <h2 className="tracking-widest text-xs title-font font-medium mb-1">
             {post.category.map((category, catId) => (
-              <CategoryTag category={category} catId={catId} />
+              <CategoryTag category={category} key={catId} />
             ))}
           </h2>
 
