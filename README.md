@@ -1,5 +1,9 @@
 This is a [Next.js](https://nextjs.org/) blog starter template using [tailwindcss](https://tailwindcss.com/).
 
+## Demo
+
+[Taily Next JS Blog Template built with Tailwind CSS - Demo](http://taily-next-js-blog-template.vercel.app/)
+
 ## Getting Started
 
 - Clone the project
