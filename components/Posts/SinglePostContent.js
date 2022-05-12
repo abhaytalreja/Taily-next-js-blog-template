@@ -4,7 +4,8 @@ import PopularCategories from "../Categories/PopularCategories"
 import ReadMore from "@/components/Posts/ReadMore"
 import CategoryTag from "@/components/Categories/CategoryTag"
 import Social from "@/components/common/Social"
-import SocialSharePost from "../common/SocialSharePost"
+import SocialSharePost from "@/components/common/SocialSharePost"
+import Button from "@/components/common/Button"
 
 export default function SinglePostContent() {
   const post = {
@@ -12,16 +13,27 @@ export default function SinglePostContent() {
     category: ["category 1", "category 2"],
   }
   const [categories, setCategories] = useState(Array.from(Array(6)))
+  const bgImage = "https://source.unsplash.com/C6oPXOatFD8"
+  const backgroundStyle = {
+    backgroundImage: `linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)), 
+url(${bgImage})`,
+  }
   return (
     <section className="text-gray-600 body-font">
       <div className="container px-5 py-12 mx-auto flex flex-col">
         <div className="lg:w-5/6 mx-auto">
-          <div className="rounded-lg h-128 overflow-hidden">
-            <img
-              alt="content"
-              className="object-cover object-center h-full w-full"
-              src="https://dummyimage.com/1200x500"
-            />
+          <div
+            className="rounded-lg text-white body-font bg-cover bg-center relative overflow-hidden py-36"
+            style={backgroundStyle}
+          >
+            <div className="container mx-auto flex px-5 py-4 sm:py-8 md:flex-row flex-col items-center">
+              <div className="lg:flex-grow md:w-full lg:pr-24 md:pr-16 flex flex-col mb-4 items-center text-center">
+                <h1 className="title-font text-2xl sm:text-3xl mb-4 font-bold text-white p-2 border-b-2 border-theme transition duration-500 ease-in">
+                  Want to share your project?
+                </h1>
+                <Button btnType="primary">Submit your project</Button>
+              </div>
+            </div>
           </div>
           <div className="flex flex-col sm:flex-row mt-10">
             <div className="sm:w-1/4 text-center sm:pr-8 sm:py-8">

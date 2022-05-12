@@ -1,6 +1,7 @@
 import React from "react"
 import siteConfig from "@/config/siteConfig"
 import Button from "@/components/common/Button"
+import Social from "./Social"
 
 export default function Hero() {
   const bgImage = "https://source.unsplash.com/C6oPXOatFD8"
@@ -10,7 +11,7 @@ url(${bgImage})`,
   }
   return (
     <section
-      className="text-white body-font bg-cover bg-center relative overflow-hidden py-12 sm:py-24"
+      className="text-white body-font bg-cover bg-center relative overflow-hidden py-12"
       style={backgroundStyle}
     >
       <div className="container mx-auto flex px-5 py-4 sm:py-8 md:flex-row flex-col items-center">
@@ -18,6 +19,9 @@ url(${bgImage})`,
           <h1 className="title-font text-2xl sm:text-3xl mb-4 font-bold text-white p-2 border-b-2 border-theme transition duration-500 ease-in">
             {siteConfig.header}
           </h1>
+          <div className="my-4 inline-flex">
+            <Social customClass="text-white" />
+          </div>
           <p className="mb-2 leading-relaxed">
             Let's create your new Blog using {siteConfig.title}!
           </p>

@@ -16,7 +16,7 @@ export default function PostPreview({ post, id, isReadMore = false }) {
             />
           </a>
         </Link>
-        <div className="p-6">
+        <div className="p-4">
           <h2 className="tracking-widest text-xs title-font font-medium mb-1">
             {post.category.map((category, catId) => (
               <CategoryTag category={category} key={catId} />
@@ -31,7 +31,7 @@ export default function PostPreview({ post, id, isReadMore = false }) {
             </a>
           </Link>
 
-          <p className="leading-relaxed mb-3">
+          <p className="mb-3 leading-snug">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua.
           </p>
