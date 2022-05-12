@@ -1,31 +1,33 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+This is a [Next.js](https://nextjs.org/) blog starter template using [`tailwindcss`](https://tailwindcss.com/).
 
 ## Getting Started
 
-First, run the development server:
+- Clone the project
+- run
 
 ```bash
 npm run dev
-# or
-yarn dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- Run the development server:
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+```bash
+npm run dev
+```
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+- Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+## Customizing Theme Color
 
-## Learn More
+To style your blog colors, just go to `tailwind.config.js` and update the `theme` and `theme-hover` colors.
 
-To learn more about Next.js, take a look at the following resources:
+## Updating Logo
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+To update your Logo, just head on to `Components/common/Logo.js` and update the SVG or add an image. Make sure to add the image source domain in your `next.config.js`
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Updating Hero Image
+
+To update the Hero Image, just head on to `Components/common/Hero.js` and update the image source. Make sure to add/update the image source domain in your `next.config.js` - For the demo purposes, I am using a free image from [Unsplash](https://source.unsplash.com/C6oPXOatFD8)
 
 ## Deploy on Vercel
 
