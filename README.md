@@ -3,12 +3,6 @@ This is a [Next.js](https://nextjs.org/) blog starter template using [`tailwindc
 ## Getting Started
 
 - Clone the project
-- run
-
-```bash
-npm run dev
-```
-
 - Run the development server:
 
 ```bash
