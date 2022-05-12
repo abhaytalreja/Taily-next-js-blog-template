@@ -11,7 +11,7 @@ export default function Header() {
   const router = useRouter()
   return (
     <header className="text-gray-600 body-font p-4 border-b-4 border-theme">
-      <div className="md:px-24 px-4 m-auto flex justify-between">
+      <div className="md:px-24 px-4 sm:px-12 m-auto flex justify-between">
         <div className="flex">
           <Link href="/">
             <a className="mx-2">
@@ -26,7 +26,7 @@ export default function Header() {
             </a>
           </Link>
         </div>
-        <div className="flex w-1/3">
+        <div className="hidden sm:flex">
           {router.pathname !== "/search" && <Search />}
           <Button
             btnType="default"
