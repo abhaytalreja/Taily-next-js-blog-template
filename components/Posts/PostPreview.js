@@ -7,11 +7,15 @@ export default function PostPreview({ post, id, isReadMore = false }) {
   return (
     <div className={`p-4 ${isReadMore ? "md:w-1/2" : "md:w-1/3"}`}>
       <div className="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
-        <img
-          className="lg:h-48 md:h-36 w-full object-cover object-center"
-          src="https://dummyimage.com/350x242"
-          alt="blog"
-        />
+        <Link href={`/posts/${id + 1}`}>
+          <a>
+            <img
+              className="lg:h-48 md:h-36 w-full object-cover object-center"
+              src="https://dummyimage.com/350x242"
+              alt="blog"
+            />
+          </a>
+        </Link>
         <div className="p-6">
           <h2 className="tracking-widest text-xs title-font font-medium mb-1">
             {post.category.map((category, catId) => (
