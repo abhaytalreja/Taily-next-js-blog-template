@@ -3,7 +3,7 @@ import PostPreview from "@/components/Posts/PostPreview"
 import Button from "@/components/common/Button"
 
 export default function ReadMore() {
-  const [posts, setPosts] = useState(Array.from(Array(2)))
+  const [posts, setPosts] = useState(Array.from(Array(3)))
   const samplePost = {
     title: "Post Title",
     summary:

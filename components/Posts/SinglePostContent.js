@@ -4,6 +4,7 @@ import PopularCategories from "../Categories/PopularCategories"
 import ReadMore from "@/components/Posts/ReadMore"
 import CategoryTag from "@/components/Categories/CategoryTag"
 import Social from "@/components/common/Social"
+import SocialSharePost from "../common/SocialSharePost"
 
 export default function SinglePostContent() {
   const post = {
@@ -107,9 +108,17 @@ export default function SinglePostContent() {
                 felis imperdiet proin fermentum leo vel orci. Tristique senectus
                 et netus et malesuada.
               </p>
-              <ReadMore />
+              <div className="my-4 flex justify-center text-center flex-col">
+                <h3 className="text-center text-xl font-semibold my-4">
+                  Share this Project:
+                </h3>
+                <div className="inline-flex text-center mx-auto">
+                  <SocialSharePost />
+                </div>
+              </div>
             </div>
           </div>
+          <ReadMore />
         </div>
       </div>
     </section>
