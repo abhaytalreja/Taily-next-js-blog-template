@@ -1,4 +1,4 @@
-This is a [Next.js](https://nextjs.org/) blog starter template using [`tailwindcss`](https://tailwindcss.com/).
+This is a [Next.js](https://nextjs.org/) blog starter template using [tailwindcss](https://tailwindcss.com/).
 
 ## Getting Started
 
@@ -32,5 +32,5 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 ## Credits
 
 - [Next.js](https://nextjs.org/)
-- [`Tailwindcss`](https://tailwindcss.com/)
-- [`Tailblocks`](https://tailblocks.cc/)
+- [Tailwindcss](https://tailwindcss.com/)
+- [Tailblocks](https://tailblocks.cc/)
